@@ -38,6 +38,7 @@ _URL_=None
 print("Checkpoint #1.1")
 
 from .nodes.RembgNode import get_rembg_models,U2NET_HOME,run_briarmbg,run_rembg
+print("Checkpoint #1.2")
 
 from server import PromptServer
 print("Checkpoint #2")
