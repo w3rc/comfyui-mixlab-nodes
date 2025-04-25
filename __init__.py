@@ -1017,241 +1017,241 @@ from .nodes.P5 import P5Input
 
 # 要导出的所有节点及其名称的字典
 # 注意：名称应全局唯一
-NODE_CLASS_MAPPINGS = {
-    "AppInfo":AppInfo,
-    "TESTNODE_":TESTNODE_,
-    "TESTNODE_TOKEN":TESTNODE_TOKEN,
+# NODE_CLASS_MAPPINGS = {
+#     "AppInfo":AppInfo,
+#     "TESTNODE_":TESTNODE_,
+#     "TESTNODE_TOKEN":TESTNODE_TOKEN,
 
-    # Prompt
-    "RandomPrompt":RandomPrompt,
-    # "LoraPrompt":LoraPrompt,
-    "EmbeddingPrompt":EmbeddingPrompt,
-    "PromptSlide":PromptSlide,
-    "GLIGENTextBoxApply_Advanced":GLIGENTextBoxApply_Advanced,
-    "PromptSimplification":PromptSimplification,
+#     # Prompt
+#     "RandomPrompt":RandomPrompt,
+#     # "LoraPrompt":LoraPrompt,
+#     "EmbeddingPrompt":EmbeddingPrompt,
+#     "PromptSlide":PromptSlide,
+#     "GLIGENTextBoxApply_Advanced":GLIGENTextBoxApply_Advanced,
+#     "PromptSimplification":PromptSimplification,
 
-    # Input
-    "GridInput":GridInput,
-    "ImagesPrompt_":ImagesPrompt,
-    "KeyInput":KeyInput,
-    "FloatSlider":FloatSlider,
-    "IntNumber":IntNumber,
-    "TextInput_":TextInput,
-    "Font":FontInput,
-    "LimitNumber":LimitNumber,
+#     # Input
+#     "GridInput":GridInput,
+#     "ImagesPrompt_":ImagesPrompt,
+#     "KeyInput":KeyInput,
+#     "FloatSlider":FloatSlider,
+#     "IntNumber":IntNumber,
+#     "TextInput_":TextInput,
+#     "Font":FontInput,
+#     "LimitNumber":LimitNumber,
 
-    # Output
-    "PromptImage":PromptImage,
-    "SaveImageToLocal":SaveImageToLocal,
-    "SaveImageAndMetadata_":SaveImageAndMetadata,
-    "ComparingTwoFrames_":ComparingTwoFrames,
-    "CreateJsonNode":CreateJsonNode,
+#     # Output
+#     "PromptImage":PromptImage,
+#     "SaveImageToLocal":SaveImageToLocal,
+#     "SaveImageAndMetadata_":SaveImageAndMetadata,
+#     "ComparingTwoFrames_":ComparingTwoFrames,
+#     "CreateJsonNode":CreateJsonNode,
 
-    # Image
-    "MirroredImage":MirroredImage,
-    "NoiseImage":NoiseImage,
-    "GradientImage":GradientImage,
-    "TransparentImage":TransparentImage,
-    "ResizeImageMixlab":ResizeImage,
-    "LoadImagesFromPath":LoadImagesFromPath,
-    "LoadImagesFromURL":LoadImagesFromURL,
-    "LoadImagesToBatch":LoadImages_,
-    "TextImage":TextImage,
-    "EnhanceImage":EnhanceImage,
-    "SvgImage":SvgImage,
-    "ImageListToBatch_":ImageListToBatch_,
-    "ImageBatchToList_":ImageBatchToList_,
-    "ImageCropByAlpha":ImageCropByAlpha,
-    "GetImageSize_":GetImageSize_,
+#     # Image
+#     "MirroredImage":MirroredImage,
+#     "NoiseImage":NoiseImage,
+#     "GradientImage":GradientImage,
+#     "TransparentImage":TransparentImage,
+#     "ResizeImageMixlab":ResizeImage,
+#     "LoadImagesFromPath":LoadImagesFromPath,
+#     "LoadImagesFromURL":LoadImagesFromURL,
+#     "LoadImagesToBatch":LoadImages_,
+#     "TextImage":TextImage,
+#     "EnhanceImage":EnhanceImage,
+#     "SvgImage":SvgImage,
+#     "ImageListToBatch_":ImageListToBatch_,
+#     "ImageBatchToList_":ImageBatchToList_,
+#     "ImageCropByAlpha":ImageCropByAlpha,
+#     "GetImageSize_":GetImageSize_,
 
-    # 3D
-    "3DImage":Image3D,
-    "DepthViewer": DepthViewer_,
+#     # 3D
+#     "3DImage":Image3D,
+#     "DepthViewer": DepthViewer_,
 
-    # Color
-    "ImageColorTransfer":ImageColorTransfer,
-    "Color":ColorInput,
+#     # Color
+#     "ImageColorTransfer":ImageColorTransfer,
+#     "Color":ColorInput,
 
-    # Layer
-    "ShowLayer":ShowLayer,
-    "NewLayer":NewLayer,
-    "MergeLayers":MergeLayers,
-    "CompositeImages_":CompositeImages,
-    "SplitImage":SplitImage,
-    "CenterImage":CenterImage,
-    "GridOutput":GridOutput,
-    "GridDisplayAndSave":GridDisplayAndSave,
+#     # Layer
+#     "ShowLayer":ShowLayer,
+#     "NewLayer":NewLayer,
+#     "MergeLayers":MergeLayers,
+#     "CompositeImages_":CompositeImages,
+#     "SplitImage":SplitImage,
+#     "CenterImage":CenterImage,
+#     "GridOutput":GridOutput,
+#     "GridDisplayAndSave":GridDisplayAndSave,
 
-    # Mask
-    "SplitLongMask":SplitLongMask,
-    "FeatheredMask":FeatheredMask,
-    "SmoothMask":SmoothMask,
-    "FaceToMask":FaceToMask,
-    "AreaToMask":AreaToMask,
-    "OutlineMask":OutlineMask,
-    "MaskListMerge_":MaskListMerge,
-    "PreviewMask_":PreviewMask_,
+#     # Mask
+#     "SplitLongMask":SplitLongMask,
+#     "FeatheredMask":FeatheredMask,
+#     "SmoothMask":SmoothMask,
+#     "FaceToMask":FaceToMask,
+#     "AreaToMask":AreaToMask,
+#     "OutlineMask":OutlineMask,
+#     "MaskListMerge_":MaskListMerge,
+#     "PreviewMask_":PreviewMask_,
 
-    # "VAELoaderConsistencyDecoder":VAELoader,
-    # "VAEDecodeConsistencyDecoder":VAEDecode,
+#     # "VAELoaderConsistencyDecoder":VAELoader,
+#     # "VAEDecodeConsistencyDecoder":VAEDecode,
 
-    # Screen
-    "ScreenShare":ScreenShareNode,
-    "FloatingVideo":FloatingVideo,
+#     # Screen
+#     "ScreenShare":ScreenShareNode,
+#     "FloatingVideo":FloatingVideo,
 
-    # Audio
-    "SpeechRecognition":SpeechRecognition,
-    "SpeechSynthesis":SpeechSynthesis,
-    "AudioPlay":AudioPlayNode,
-    "AnalyzeAudio":AnalyzeAudioNone,
+#     # Audio
+#     "SpeechRecognition":SpeechRecognition,
+#     "SpeechSynthesis":SpeechSynthesis,
+#     "AudioPlay":AudioPlayNode,
+#     "AnalyzeAudio":AnalyzeAudioNone,
 
-    # Text
-    "TextToNumber":TextToNumber,
-    "JoinWithDelimiter":JoinWithDelimiter,
+#     # Text
+#     "TextToNumber":TextToNumber,
+#     "JoinWithDelimiter":JoinWithDelimiter,
 
-    # Utils
-    "MultiplicationNode":MultiplicationNode,
-    "DynamicDelayProcessor":DynamicDelayProcessor,
-    "SwitchByIndex":SwitchByIndex,
-    "ListSplit_":ListSplit,
+#     # Utils
+#     "MultiplicationNode":MultiplicationNode,
+#     "DynamicDelayProcessor":DynamicDelayProcessor,
+#     "SwitchByIndex":SwitchByIndex,
+#     "ListSplit_":ListSplit,
 
-    # Experiment
-    "Seed_":CreateSeedNode,
-    "CkptNames_":CreateCkptNames,
-    "SamplerNames_":CreateSampler_names,
-    "LoraNames_":CreateLoraNames,
+#     # Experiment
+#     "Seed_":CreateSeedNode,
+#     "CkptNames_":CreateCkptNames,
+#     "SamplerNames_":CreateSampler_names,
+#     "LoraNames_":CreateLoraNames,
 
-    # Style
-    "ApplyVisualStylePrompting_":ApplyVisualStylePrompting,
-    "StyleAlignedReferenceSampler_": StyleAlignedReferenceSampler,
-    "StyleAlignedSampleReferenceLatents_": StyleAlignedSampleReferenceLatents,
-    "StyleAlignedBatchAlign_": StyleAlignedBatchAlign,
+#     # Style
+#     "ApplyVisualStylePrompting_":ApplyVisualStylePrompting,
+#     "StyleAlignedReferenceSampler_": StyleAlignedReferenceSampler,
+#     "StyleAlignedSampleReferenceLatents_": StyleAlignedSampleReferenceLatents,
+#     "StyleAlignedBatchAlign_": StyleAlignedBatchAlign,
 
-    # Video
-    "MaskListReplace_":MaskListReplace,
-    "IncrementingListNode_":IncrementingListNode,
+#     # Video
+#     "MaskListReplace_":MaskListReplace,
+#     "IncrementingListNode_":IncrementingListNode,
 
-    "P5Input":P5Input
-}
+#     "P5Input":P5Input
+# }
 
-# 一个包含节点友好/可读的标题的字典
-NODE_DISPLAY_NAME_MAPPINGS = {
-    "AppInfo":"App Info ♾️Mixlab",
-    "TESTNODE_":"TESTNODE_ ♾️Mixlab",
-    "TESTNODE_TOKEN":"TESTNODE_TOKEN ♾️Mixlab",
+# # 一个包含节点友好/可读的标题的字典
+# NODE_DISPLAY_NAME_MAPPINGS = {
+#     "AppInfo":"App Info ♾️Mixlab",
+#     "TESTNODE_":"TESTNODE_ ♾️Mixlab",
+#     "TESTNODE_TOKEN":"TESTNODE_TOKEN ♾️Mixlab",
 
-    # Prompt
-    "RandomPrompt": "Random Prompt ♾️Mixlab",
-    "EmbeddingPrompt":"Embedding Prompt ♾️Mixlab",
-    "PromptSlide":"Prompt Slide ♾️Mixlab",
-    "GLIGENTextBoxApply_Advanced":"GLIGEN TextBox Apply ♾️Mixlab",
-    "PromptSimplification":"PromptSimplification ♾️Mixlab",
-    "PromptGenerate_Mix":"Prompt Generate ♾️Mixlab",
-    "ChinesePrompt_Mix":"Chinese Prompt ♾️Mixlab",
+#     # Prompt
+#     "RandomPrompt": "Random Prompt ♾️Mixlab",
+#     "EmbeddingPrompt":"Embedding Prompt ♾️Mixlab",
+#     "PromptSlide":"Prompt Slide ♾️Mixlab",
+#     "GLIGENTextBoxApply_Advanced":"GLIGEN TextBox Apply ♾️Mixlab",
+#     "PromptSimplification":"PromptSimplification ♾️Mixlab",
+#     "PromptGenerate_Mix":"Prompt Generate ♾️Mixlab",
+#     "ChinesePrompt_Mix":"Chinese Prompt ♾️Mixlab",
 
-    # Input
-    "GridInput":"Grid Input ♾️Mixlab",
-    "ImagesPrompt_":"Images Input ♾️Mixlab",
-    "KeyInput":"API Key Input ♾️Mixlab",
-    "FloatSlider":"Float Slider Input ♾️Mixlab",
-    "IntNumber":"Int Input ♾️Mixlab",
-    "TextInput_":"Text Input ♾️Mixlab",
-    "Font":"Font Input ♾️Mixlab",
-    "LimitNumber":"LimitNumber Input ♾️Mixlab",
+#     # Input
+#     "GridInput":"Grid Input ♾️Mixlab",
+#     "ImagesPrompt_":"Images Input ♾️Mixlab",
+#     "KeyInput":"API Key Input ♾️Mixlab",
+#     "FloatSlider":"Float Slider Input ♾️Mixlab",
+#     "IntNumber":"Int Input ♾️Mixlab",
+#     "TextInput_":"Text Input ♾️Mixlab",
+#     "Font":"Font Input ♾️Mixlab",
+#     "LimitNumber":"LimitNumber Input ♾️Mixlab",
 
-    # Output
-    "PromptImage":"Output Prompt and Image ♾️Mixlab",
-    "SaveImageToLocal":"Save Image To Local ♾️Mixlab",
-    "SaveImageAndMetadata_":"Save Image Output ♾️Mixlab",
-    "ComparingTwoFrames_":"Comparing Two Frames ♾️Mixlab",
+#     # Output
+#     "PromptImage":"Output Prompt and Image ♾️Mixlab",
+#     "SaveImageToLocal":"Save Image To Local ♾️Mixlab",
+#     "SaveImageAndMetadata_":"Save Image Output ♾️Mixlab",
+#     "ComparingTwoFrames_":"Comparing Two Frames ♾️Mixlab",
 
-    # Image
-    "MirroredImage":"MirroredImage ♾️Mixlab",
-    "NoiseImage":"NoiseImage ♾️Mixlab",
-    "GradientImage":"GradientImage ♾️Mixlab",
-    "TransparentImage":"TransparentImage ♾️Mixlab",
-    "ResizeImageMixlab":"Resize Image ♾️Mixlab",
-    "LoadImagesFromPath":"Load Images From Path ♾️Mixlab",
-    "LoadImagesFromURL":"Load Images From URL ♾️Mixlab",
-    "LoadImagesToBatch":"Load Images(base64) ♾️Mixlab",
-    "TextImage":"Text Image ♾️Mixlab",
-    "EnhanceImage":"Enhance Image ♾️Mixlab",
-    "SvgImage":"Svg Image ♾️Mixlab",
-    "ImageListToBatch_":"Image List To Batch ♾️Mixlab",
-    "ImageBatchToList_":"Image Batch To List ♾️Mixlab",
-    "ImageCropByAlpha":"ImageCropByAlpha ♾️Mixlab",
-    "GetImageSize_":"Get Image Size ♾️Mixlab",
+#     # Image
+#     "MirroredImage":"MirroredImage ♾️Mixlab",
+#     "NoiseImage":"NoiseImage ♾️Mixlab",
+#     "GradientImage":"GradientImage ♾️Mixlab",
+#     "TransparentImage":"TransparentImage ♾️Mixlab",
+#     "ResizeImageMixlab":"Resize Image ♾️Mixlab",
+#     "LoadImagesFromPath":"Load Images From Path ♾️Mixlab",
+#     "LoadImagesFromURL":"Load Images From URL ♾️Mixlab",
+#     "LoadImagesToBatch":"Load Images(base64) ♾️Mixlab",
+#     "TextImage":"Text Image ♾️Mixlab",
+#     "EnhanceImage":"Enhance Image ♾️Mixlab",
+#     "SvgImage":"Svg Image ♾️Mixlab",
+#     "ImageListToBatch_":"Image List To Batch ♾️Mixlab",
+#     "ImageBatchToList_":"Image Batch To List ♾️Mixlab",
+#     "ImageCropByAlpha":"ImageCropByAlpha ♾️Mixlab",
+#     "GetImageSize_":"Get Image Size ♾️Mixlab",
 
-    # 3D
-    "3DImage":"3DImage ♾️Mixlab",
-    "DepthViewer": "Depth Viewer ♾️Mixlab",
+#     # 3D
+#     "3DImage":"3DImage ♾️Mixlab",
+#     "DepthViewer": "Depth Viewer ♾️Mixlab",
 
-    # "VAELoaderConsistencyDecoder":"Consistency Decoder Loader",
-    # "VAEDecodeConsistencyDecoder":"Consistency Decoder Decode",
+#     # "VAELoaderConsistencyDecoder":"Consistency Decoder Loader",
+#     # "VAEDecodeConsistencyDecoder":"Consistency Decoder Decode",
 
-    # Color
-    "ImageColorTransfer":"Image Color Transfer ♾️Mixlab",
-    "Color":"Color Input ♾️MixlabApp",
+#     # Color
+#     "ImageColorTransfer":"Image Color Transfer ♾️Mixlab",
+#     "Color":"Color Input ♾️MixlabApp",
 
-    # Layer
-    "ShowLayer":"Show Layer ♾️Mixlab",
-    "NewLayer":"New Layer ♾️Mixlab",
-    "MergeLayers":"Merge Layers ♾️Mixlab",
-    "CompositeImages_":"Composite Images ♾️Mixlab",
-    "SplitImage":"Split Image ♾️Mixlab",
-    "CenterImage":"Center Image ♾️Mixlab",
-    "GridDisplayAndSave":"Grid Display And Save ♾️Mixlab",
-    "GridOutput":"Grid Output ♾️Mixlab",
+#     # Layer
+#     "ShowLayer":"Show Layer ♾️Mixlab",
+#     "NewLayer":"New Layer ♾️Mixlab",
+#     "MergeLayers":"Merge Layers ♾️Mixlab",
+#     "CompositeImages_":"Composite Images ♾️Mixlab",
+#     "SplitImage":"Split Image ♾️Mixlab",
+#     "CenterImage":"Center Image ♾️Mixlab",
+#     "GridDisplayAndSave":"Grid Display And Save ♾️Mixlab",
+#     "GridOutput":"Grid Output ♾️Mixlab",
 
-    # Mask
-    "SplitLongMask":"Splitting a long image into sections",
-    "FeatheredMask":"Feathered Mask ♾️Mixlab",
-    "SmoothMask":"Smooth Mask ♾️Mixlab",
-    "FaceToMask":"Face To Mask ♾️Mixlab",
-    "AreaToMask":"Area To Mask ♾️Mixlab",
-    "OutlineMask":"Outline Mask ♾️Mixlab",
-    "MaskListMerge_":"MaskList to Mask ♾️Mixlab",
-    "PreviewMask_":"Preview Mask ♾️Mixlab",
+#     # Mask
+#     "SplitLongMask":"Splitting a long image into sections",
+#     "FeatheredMask":"Feathered Mask ♾️Mixlab",
+#     "SmoothMask":"Smooth Mask ♾️Mixlab",
+#     "FaceToMask":"Face To Mask ♾️Mixlab",
+#     "AreaToMask":"Area To Mask ♾️Mixlab",
+#     "OutlineMask":"Outline Mask ♾️Mixlab",
+#     "MaskListMerge_":"MaskList to Mask ♾️Mixlab",
+#     "PreviewMask_":"Preview Mask ♾️Mixlab",
 
-    # Screen
-    "ScreenShare":"Screen Share ♾️Mixlab",
-    "FloatingVideo":"Floating Video ♾️Mixlab",
+#     # Screen
+#     "ScreenShare":"Screen Share ♾️Mixlab",
+#     "FloatingVideo":"Floating Video ♾️Mixlab",
 
-    # Audio
-    "SpeechSynthesis":"SpeechSynthesis ♾️Mixlab",
-    "SpeechRecognition":"SpeechRecognition ♾️Mixlab",
-    "AudioPlay":"Preview Audio ♾️Mixlab",
-    "AnalyzeAudio":"Analyze Audio ♾️Mixlab",
+#     # Audio
+#     "SpeechSynthesis":"SpeechSynthesis ♾️Mixlab",
+#     "SpeechRecognition":"SpeechRecognition ♾️Mixlab",
+#     "AudioPlay":"Preview Audio ♾️Mixlab",
+#     "AnalyzeAudio":"Analyze Audio ♾️Mixlab",
 
-    # Utils
-    "DynamicDelayProcessor":"DynamicDelayByText ♾️Mixlab",
-    "MultiplicationNode":"Math Operation ♾️Mixlab",
-    "ListSplit_":"Split List ♾️Mixlab",
-    "SwitchByIndex":"List Switch By Index ♾️Mixlab",
-    "CreateJsonNode":"Create Json",
+#     # Utils
+#     "DynamicDelayProcessor":"DynamicDelayByText ♾️Mixlab",
+#     "MultiplicationNode":"Math Operation ♾️Mixlab",
+#     "ListSplit_":"Split List ♾️Mixlab",
+#     "SwitchByIndex":"List Switch By Index ♾️Mixlab",
+#     "CreateJsonNode":"Create Json",
 
-    # "GamePal":"GamePal ♾️Mixlab",
-    # Experiment
-    "Seed_":"CreateSeedNode ♾️Mixlab",
-    "CkptNames_":"CreateCkptNames ♾️Mixlab",
-    "SamplerNames_":"CreateSampler_names ♾️Mixlab",
-    "LoraNames_":"LoraName ♾️Mixlab",
+#     # "GamePal":"GamePal ♾️Mixlab",
+#     # Experiment
+#     "Seed_":"CreateSeedNode ♾️Mixlab",
+#     "CkptNames_":"CreateCkptNames ♾️Mixlab",
+#     "SamplerNames_":"CreateSampler_names ♾️Mixlab",
+#     "LoraNames_":"LoraName ♾️Mixlab",
 
-    # Style
-    "ApplyVisualStylePrompting_":"Apply VisualStyle Prompting ♾️Mixlab",
-    "StyleAlignedReferenceSampler_": "StyleAligned Reference Sampler ♾️Mixlab",
-    "StyleAlignedSampleReferenceLatents_": "StyleAligned Sample Reference Latents ♾️Mixlab",
-    "StyleAlignedBatchAlign_": "StyleAligned Batch Align ♾️Mixlab",
+#     # Style
+#     "ApplyVisualStylePrompting_":"Apply VisualStyle Prompting ♾️Mixlab",
+#     "StyleAlignedReferenceSampler_": "StyleAligned Reference Sampler ♾️Mixlab",
+#     "StyleAlignedSampleReferenceLatents_": "StyleAligned Sample Reference Latents ♾️Mixlab",
+#     "StyleAlignedBatchAlign_": "StyleAligned Batch Align ♾️Mixlab",
 
-    # Video
-    "MaskListReplace_":"MaskList Replace ♾️Mixlab",
-    "IncrementingListNode_":"Create Incrementing Number List ♾️Mixlab",
-    "LoadVideoAndSegment_":"Load Video And Segment ♾️Mixlab",
-    "VideoCombine_Adv":"Video Combine ♾️Mixlab",
-    "ImageListReplace_":"ImageList Replace ♾️Mixlab",
+#     # Video
+#     "MaskListReplace_":"MaskList Replace ♾️Mixlab",
+#     "IncrementingListNode_":"Create Incrementing Number List ♾️Mixlab",
+#     "LoadVideoAndSegment_":"Load Video And Segment ♾️Mixlab",
+#     "VideoCombine_Adv":"Video Combine ♾️Mixlab",
+#     "ImageListReplace_":"ImageList Replace ♾️Mixlab",
 
-    "P5Input":"P5 Input ♾️Mixlab for test"
-}
+#     "P5Input":"P5 Input ♾️Mixlab for test"
+# }
 
 # web ui的节点功能
 WEB_DIRECTORY = "./web"
