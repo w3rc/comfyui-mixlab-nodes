@@ -15,6 +15,7 @@ from PIL import Image
 from comfy.cli_args import args
 python = sys.executable
 
+print("Checkpoint #1")
 #修复 sys.stdout.isatty()  object has no attribute 'isatty'
 try:
     sys.stdout.isatty()
@@ -37,7 +38,7 @@ _URL_=None
 from .nodes.RembgNode import get_rembg_models,U2NET_HOME,run_briarmbg,run_rembg
 
 from server import PromptServer
-
+print("Checkpoint #2")
 try:
     import aiohttp
     from aiohttp import web
@@ -97,7 +98,7 @@ except ImportError:
     is_installed('watchdog')
     sys.exit()
 
-
+print("Checkpoint #3")
 def install_openai():
     # Helper function to install the OpenAI module if not already installed
     try:
@@ -432,7 +433,7 @@ def get_nodes_map():
 
     return json_data
 
-
+print("Checkpoint #3")
 # 保存原始的 get 方法
 _original_request = aiohttp.ClientSession._request
 
@@ -571,11 +572,13 @@ async def new_start(self, address, port, verbose=True, call_on_start=None):
         # webbrowser.open(f"https://{address}")
         # webbrowser.open(f"http://{address}:{port}")
 
+print("Checkpoint #4")
 PromptServer.start=new_start
 
 # 创建路由表
 routes = PromptServer.instance.routes
 
+print("Checkpoint #5")
 @routes.post('/mixlab')
 async def mixlab_hander(request):
     config=os.path.join(current_path, "nodes/config.json")
@@ -1252,6 +1255,8 @@ from .nodes.P5 import P5Input
 
 #     "P5Input":"P5 Input ♾️Mixlab for test"
 # }
+
+print("Checkpoint #6")
 
 # web ui的节点功能
 WEB_DIRECTORY = "./web"
