@@ -16,12 +16,12 @@ from comfy.cli_args import args
 python = sys.executable
 
 print("Checkpoint #1")
-#修复 sys.stdout.isatty()  object has no attribute 'isatty'
-try:
-    sys.stdout.isatty()
-except:
-    print('#fix sys.stdout.isatty')
-    sys.stdout.isatty = lambda: False
+# #修复 sys.stdout.isatty()  object has no attribute 'isatty'
+# try:
+#     sys.stdout.isatty()
+# except:
+#     print('#fix sys.stdout.isatty')
+#     sys.stdout.isatty = lambda: False
 
 _URL_=None
 
