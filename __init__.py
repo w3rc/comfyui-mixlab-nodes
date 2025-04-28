@@ -40,17 +40,17 @@ _available=True
 # from .nodes.ChatGPT import openai_client
 print("Checkpoint #1.1")
 
-from .nodes.RembgNode import get_rembg_models
-print("Checkpoint #1.2")
-from .nodes.RembgNode import U2NET_HOME
-print("Checkpoint #1.3")
+# from .nodes.RembgNode import get_rembg_models
+# print("Checkpoint #1.2")
+# from .nodes.RembgNode import U2NET_HOME
+# print("Checkpoint #1.3")
 
-from .nodes.RembgNode import run_briarmbg
-print("Checkpoint #1.4")
+# from .nodes.RembgNode import run_briarmbg
+# print("Checkpoint #1.4")
 
 
-from .nodes.RembgNode import run_rembg
-print("Checkpoint #1.5")
+# from .nodes.RembgNode import run_rembg
+# print("Checkpoint #1.5")
 
 
 from server import PromptServer
@@ -813,7 +813,7 @@ async def get_checkpoints(request):
 
     try:
         if data['type']=='rembg':
-            names=get_rembg_models(U2NET_HOME)
+            names=[]
     except:
         print("rembg none")
 
@@ -835,10 +835,10 @@ async def rembg_hander(request):
     # 使用PIL Image模块读取图像
     image = Image.open(image_stream)
 
-    if model=='briarmbg':
-        _,rgba_images,_=run_briarmbg([image])
-    else:
-        _,rgba_images,_=run_rembg(model,[image])
+    # if model=='briarmbg':
+    #     _,rgba_images,_=run_briarmbg([image])
+    # else:
+    #     _,rgba_images,_=run_rembg(model,[image])
 
     with io.BytesIO() as buf:
         rgba_images[0].save(buf, format='PNG')
