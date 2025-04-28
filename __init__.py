@@ -37,8 +37,18 @@ _URL_=None
 # from .nodes.ChatGPT import openai_client
 print("Checkpoint #1.1")
 
-from .nodes.RembgNode import get_rembg_models,U2NET_HOME,run_briarmbg,run_rembg
+from .nodes.RembgNode import get_rembg_models
 print("Checkpoint #1.2")
+from .nodes.RembgNode import U2NET_HOME
+print("Checkpoint #1.3")
+
+from .nodes.RembgNode import run_briarmbg
+print("Checkpoint #1.4")
+
+
+from .nodes.RembgNode import run_rembg
+print("Checkpoint #1.5")
+
 
 from server import PromptServer
 print("Checkpoint #2")
