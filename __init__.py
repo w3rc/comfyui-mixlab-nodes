@@ -26,6 +26,9 @@ except:
 
 _URL_=None
 
+global _available
+_available=True
+
 
 # try:
 #     from .nodes.ChatGPT import get_llama_models,get_llama_model_path,llama_cpp_client
