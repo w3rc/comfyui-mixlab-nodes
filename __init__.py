@@ -1357,14 +1357,14 @@ try:
 except Exception as e:
     logging.info('TextGenerateNode.available False')
 
-try:
-    from .nodes.RembgNode import RembgNode_
-    logging.info('RembgNode_.available {}'.format(RembgNode_.available))
-    if RembgNode_.available:
-        NODE_CLASS_MAPPINGS['RembgNode_Mix']=RembgNode_
-        NODE_DISPLAY_NAME_MAPPINGS['RembgNode_Mix']="Remove Background ♾️Mixlab"
-except Exception as e:
-    logging.info('RembgNode_.available False' )
+# try:
+#     from .nodes.RembgNode import RembgNode_
+#     logging.info('RembgNode_.available {}'.format(RembgNode_.available))
+#     if RembgNode_.available:
+#         NODE_CLASS_MAPPINGS['RembgNode_Mix']=RembgNode_
+#         NODE_DISPLAY_NAME_MAPPINGS['RembgNode_Mix']="Remove Background ♾️Mixlab"
+# except Exception as e:
+#     logging.info('RembgNode_.available False' )
 
 
 try:
